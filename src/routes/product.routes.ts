@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import ProductController from "../controller/productController";
+import ProductController from "../controller/productController/productController";
 import ProductRepository from '../repositories/ProductRepository';
 import CreateProductService from '../services/CreateProductService';
 
