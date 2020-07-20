@@ -2,9 +2,9 @@ import ProductRepository from '../repositories/ProductRepository';
 import Product from '../models/Product';
 
 export default class CreateProductService {
-  private repository: ProductRepository;
+  // private repository: ProductRepository;
 
   constructor() {}
 
-  public execute(): {};
+  // public execute(): {};
 }

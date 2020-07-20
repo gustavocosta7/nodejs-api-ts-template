@@ -16,7 +16,7 @@ export default class ProductRepository {
   }
 
   public save({}) {
-    const product = new Product({});
-    return product;
+    // const product = new Product({});
+    // return product;
   }
 }

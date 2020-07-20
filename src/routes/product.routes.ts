@@ -1,13 +1,15 @@
 import { Router } from 'express';
+import ProductController from "../controller/productController";
 import ProductRepository from '../repositories/ProductRepository';
 import CreateProductService from '../services/CreateProductService';
 
 const productRouter = Router();
-const productRepository = new ProductRepository();
+const productController = new ProductController();
+// const productRepository = new ProductRepository();
 
 productRouter.get('/', (request, response) => {
-  // response.json(productRepository.findAll());
-  response.send('OLá');
+  const result  = productController.index();
+  response.send(result);
 });
 
 productRouter.post('/', (request, response) => {

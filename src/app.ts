@@ -1,12 +1,6 @@
 import express from 'express';
 import routes from './routes/index';
-const rateLimit = require('express-rate-limit');
-
-const limiter = rateLimit({
-  windowMs: 1 * 60 * 1000,
-  max: 1,
-  message: 'Muitas tentativas meu camarada!',
-});
+import limiter from './middleware/rateLimit'
 
 const app = express();
 
