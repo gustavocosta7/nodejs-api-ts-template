@@ -1,11 +1,10 @@
-const request = require('supertest');
-import app from '../../app'
+import app from "../../app";
+import request from "supertest";
 
+describe("/products/", () => {
+    it("GET / ", async () => {
+        const result = await request(app).get("/products/");
+        expect(result.status).toEqual(200);
 
-describe('Ola', () => {
-    it('chamar normalmente', async () => {
-        request(app)
-            .get('/product/')
-            .expect(402, 'olá');
     });
-})
+});
