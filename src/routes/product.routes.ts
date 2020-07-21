@@ -9,7 +9,7 @@ const productController = new ProductController();
 
 productRouter.get('/', (request, response) => {
   const result  = productController.index();
-  response.send(result);
+  response.send({"Ola": "oi"});
 });
 
 productRouter.post('/', (request, response) => {
