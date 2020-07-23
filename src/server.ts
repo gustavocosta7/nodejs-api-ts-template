@@ -1,6 +1,6 @@
 import logger from './middleware/pino';
 import app from './app';
 
-app.listen(3000, () => {
+app.listen(process.env.port, () => {
   logger.info('‍Running Server: 3000');
 });
