@@ -14,7 +14,7 @@ productRouter.get('/', (request, response) => {
 
 productRouter.post('/', (request, response) => {
   try {
-    response.status(201).json('');
+    response.status(201).json('Olás');
   } catch (err) {
     return response.status(400).json({ Erro: err.message });
   }
