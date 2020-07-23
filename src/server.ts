@@ -1,7 +1,6 @@
+import logger from './middleware/pino';
 import app from './app';
 
 app.listen(3000, () => {
-  console.log('🏃 ‍Running Server');
+  logger.info('‍Running Server: 3000');
 });
-
-export default app;
